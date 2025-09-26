@@ -182,33 +182,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Preview */}
-      <section className="py-16 bg-gray-800 text-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">About Prestige Properties</h2>
-              <p className="text-lg mb-6">
-                With over 25 years of experience in the real estate industry, Prestige Properties has established itself as a leader in luxury development. Our commitment to quality, innovation, and customer satisfaction sets us apart.
-              </p>
-              <p className="text-lg mb-8">
-                We take pride in our attention to detail, sustainable building practices, and creating spaces that enhance communities.
-              </p>
-              <Link href="/about" className="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition">
-                Learn More About Us
-              </Link>
-            </div>
-            <div className="lg:w-1/2">
-              <div className="bg-gray-700 h-80 rounded-lg overflow-hidden">
-                <div 
-                  className="w-full h-full bg-cover bg-center"
-                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80')" }}
-                ></div>
-              </div>
-            </div>
-          </div>
+    {/* About Preview */}
+<section className="py-16 bg-gray-800 text-white">
+  <div className="container mx-auto px-4">
+    <div className="flex flex-col lg:flex-row items-center">
+      {/* Text Section */}
+      <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          About Prestige Properties
+        </h2>
+        <p className="text-lg mb-6">
+          With over 25 years of experience in the real estate industry,
+          Prestige Properties has established itself as a leader in luxury
+          development. Our commitment to quality, innovation, and customer
+          satisfaction sets us apart.
+        </p>
+        <p className="text-lg mb-8">
+          We take pride in our attention to detail, sustainable building
+          practices, and creating spaces that enhance communities.
+        </p>
+        <Link
+          href="/about"
+          className="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition"
+        >
+          Learn More About Us
+        </Link>
+      </div>
+
+      {/* Image Section */}
+      <div className="lg:w-1/2 w-full">
+        <div className="rounded-lg overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80"
+            alt="Prestige Properties"
+            className="w-full h-64 sm:h-80 md:h-96 object-cover"
+          />
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Testimonials */}
       <section className="py-16 bg-gray-50">

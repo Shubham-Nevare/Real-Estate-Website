@@ -17,7 +17,7 @@ export const metadata = {
   title: "Akruti Developers - Real Estate Website",
   description: "Akruti Developers - Building dreams, creating legacies. Premium real estate development company specializing in luxury residential and commercial properties.",
    icons: {
-    icon: "/akruti-icon.png", // or "/logo.png" (placed inside /public)
+    icon: "/akruti-icon.ico", // or "/logo.png" (placed inside /public)
   },
 };
 
