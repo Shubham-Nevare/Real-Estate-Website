@@ -23,7 +23,9 @@ function Navbar() {
   return (
     <>
       {/* Header */}
-      <header className="fixed w-full bg-white/10 backdrop-blur-md shadow-md z-50">
+      <header className="fixed w-full bg-white z-50">
+        {/* <header className="fixed w-full bg-white/10 backdrop-blur-md shadow-md z-50"> */}
+
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link

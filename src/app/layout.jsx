@@ -17,13 +17,20 @@ export const metadata = {
   title: "Akruti Developers - Real Estate Website",
   description: "Akruti Developers - Building dreams, creating legacies. Premium real estate development company specializing in luxury residential and commercial properties.",
    icons: {
-    icon: "/akruti-icon.ico", // or "/logo.png" (placed inside /public)
+    icon: "/akruti-icon.ico",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/akruti-icon.png"
+          type="image/x-icon"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
