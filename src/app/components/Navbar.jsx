@@ -23,9 +23,15 @@ function Navbar() {
   return (
     <>
       {/* Header */}
-      <header className="fixed w-full bg-white z-50">
-        {/* <header className="fixed w-full bg-white/10 backdrop-blur-md shadow-md z-50"> */}
-
+      {/* <header className="fixed w-full bg-white z-50"> */}
+      {/* <header className="fixed w-full bg-white/10 backdrop-blur-md shadow-md z-50"> */}
+      <header
+        className={`fixed w-full z-50 ${
+          mobileMenuOpen
+            ? "bg-white"
+            : "bg-white md:bg-white/10 md:backdrop-blur-md"
+        } shadow-md px-[15px] md:px-[32px]`}
+      >
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link
@@ -39,6 +45,10 @@ function Navbar() {
               />
               Akruti<span className="text-amber-600"> Developers </span>
             </Link>
+
+            <span className="hidden lg:inline-block bg-red-100 text-red-600 text-sm font-semibold px-3 py-1 rounded-full animate-blink">
+              Testing Website
+            </span>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">

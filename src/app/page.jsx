@@ -19,7 +19,10 @@ export default function Home() {
       </Head>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-blue-700">
+      {/* <section className="relative h-screen flex items-center justify-center bg-gradient-to-t from-blue-900 to-white"> */}
+     <section className="relative h-screen flex items-center justify-center bg-[linear-gradient(to_top,_#1e3a8a_80%,_white_100%)]">
+
+
         {/* <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{

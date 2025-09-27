@@ -81,6 +81,7 @@ export default function ContactSection() {
                     type="text"
                     name="name"
                     value={form.name}
+                    placeholder="Enter your name"
                     onChange={handleChange}
                     className="w-full bg-transparent outline-none text-sm"
                   />
@@ -101,6 +102,7 @@ export default function ContactSection() {
                     type="email"
                     name="email"
                     value={form.email}
+                    placeholder="Enter your email"
                     onChange={handleChange}
                     className="w-full bg-transparent outline-none text-sm"
                   />
@@ -120,6 +122,7 @@ export default function ContactSection() {
                   <textarea
                     name="message"
                     value={form.message}
+                    placeholder="Type your message here..."
                     onChange={handleChange}
                     rows={2}
                     className="w-full bg-transparent outline-none resize-none text-sm"

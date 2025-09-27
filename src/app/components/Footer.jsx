@@ -5,9 +5,9 @@ import { FiX } from "react-icons/fi";
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white ">
       {/* Main Footer Content */}
-      <div className="py-12 mx-4">
+      <div className="py-12 px-[15px] md:px-[32px]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand & Description */}
@@ -280,7 +280,7 @@ function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-gray-800 py-6 bg-gray-950">
+      <div className="border-t border-gray-800 py-6 bg-gray-950 px-[15px] md:px-[32px]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left mb-4 md:mb-0">
