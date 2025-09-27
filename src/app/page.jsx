@@ -20,9 +20,7 @@ export default function Home() {
 
       {/* Hero Section */}
       {/* <section className="relative h-screen flex items-center justify-center bg-gradient-to-t from-blue-900 to-white"> */}
-     <section className="relative h-screen flex items-center justify-center bg-[linear-gradient(to_top,_#1e3a8a_80%,_white_100%)]">
-
-
+      <section className="relative h-screen flex items-center justify-center bg-[linear-gradient(to_top,_#1e3a8a_80%,_white_100%)]">
         {/* <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
@@ -30,13 +28,45 @@ export default function Home() {
               "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80')",
           }}
         ></div> */}
-        <div className="absolute inset-0 opacity-20">
+        {/* <div className="absolute inset-0 opacity-20">
           <Image
-            src="/project-4.jpg"
+            src="/project-5.jpeg"
             alt="Background"
             fill
-            className="object-cover object-center"
+            className="object-cover md:object-fit object-center"
             priority
+          />
+        </div> */}
+        {/* <div className="absolute inset-0 opacity-20">
+          <video
+            src="/real estate vid 2.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover md:object-fit object-center"
+          />
+        </div> */}
+
+        <div className="absolute inset-0 opacity-20">
+          {/* Desktop Video */}
+          <video
+            src="/real estate vid 2.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="hidden md:block w-full h-full object-cover object-center"
+          />
+
+          {/* Mobile Video */}
+          <video
+            src="/real estate vid 0.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="block md:hidden w-full h-full object-cover object-center"
           />
         </div>
 
@@ -432,6 +462,73 @@ export default function Home() {
                   className="w-full h-64 sm:h-80 md:h-96 object-cover"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Real Estate Showcase Video Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50 px-[15px] md:px-[32px]">
+        <div className="container mx-auto px-4">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row items-center max-w-6xl mx-auto transition-transform hover:scale-[1.01] duration-300">
+            {/* Video Left */}
+            <div className="w-full md:w-1/2 relative flex-shrink-0">
+              <video
+                src="/real estate vid 3.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/project-1.webp"
+                className="w-full h-64 md:h-[420px] object-cover rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none"
+              />
+            </div>
+
+            {/* Data Right */}
+            <div className="w-full md:w-1/2 px-5 pt-5 md:px-10 md:pt-5 flex flex-col justify-center items-start text-left">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
+                Experience{" "}
+                <span className="text-amber-600">Real Estate Excellence</span>
+              </h2>
+
+              <p className="text-gray-700 text-lg md:text-xl mb-6">
+                Watch our showcase video to see how
+                <span className="font-semibold text-blue-800">
+                  {" "}
+                  Akruti Developers{" "}
+                </span>
+                transforms visions into reality. Discover our commitment to
+                <span className="text-amber-600 font-medium"> quality</span>,
+                <span className="text-amber-600 font-medium"> innovation</span>,
+                and{" "}
+                <span className="text-amber-600 font-medium">
+                  {" "}
+                  customer satisfaction
+                </span>{" "}
+                in every project.
+              </p>
+
+              <ul className="mb-8 space-y-3 text-gray-700 text-base">
+                <li className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 bg-amber-600 rounded-full"></span>
+                  Premium residential & commercial spaces
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 bg-amber-600 rounded-full"></span>
+                  Modern architecture & sustainable design
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 bg-amber-600 rounded-full"></span>
+                  Trusted by hundreds of happy clients
+                </li>
+              </ul>
+
+              {/* <Link
+          href="/projects"
+          className="inline-block bg-amber-600 text-white px-7 py-3.5 rounded-xl font-semibold shadow-md hover:bg-amber-700 hover:shadow-lg transition-all duration-300"
+        >
+          Explore Our Projects
+        </Link> */}
             </div>
           </div>
         </div>
